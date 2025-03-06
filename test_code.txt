@@ -1,0 +1,16 @@
+0a800093        addi x1 x0 168
+00102023        sw x1 0 x0
+00002c03        lw x24 0 x0
+001c0c33        add x24 x24 x1
+018c0c63        beq x24 x24 24
+00a00513        addi x10 x0 10
+00b00593        addi x11 x0 11
+00c00613        addi x12 x0 12
+00d00693        addi x13 x0 13
+00e00713        addi x14 x0 14
+01f00f93        addi x31 x0 31
+
+// result
+x1		000000a8
+x24		00000150
+x31		0000001f
